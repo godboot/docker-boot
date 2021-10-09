@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: docker-boot
+  name: docker-boot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: docker-boot
+  template:
+    metadata:
+      labels:
+        app: docker-boot
+    spec:
+      containers:
+        - image: boot/docker-boot
+          name: docker-boot-e2e
