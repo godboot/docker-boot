@@ -18,4 +18,9 @@ public class DemoController {
     public String test(){
         return "测试啊22";
     }
+
+    @GetMapping("test2")
+    public String test2(){
+        return "测试啊111";
+    }
 }
