@@ -19,7 +19,7 @@ public class DemoController {
     @GetMapping("test")
     public String test(){
         log.info("{}", "test");
-        return "测试啊2233-的点点滴滴";
+        return "测试啊2233-的点点滴滴-";
     }
 
     @GetMapping("test2")
