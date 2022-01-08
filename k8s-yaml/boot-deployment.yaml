@@ -15,7 +15,7 @@ spec:
         app: docker-boot
     spec:
       containers:
-        - image: docker-boot:latest
+        - image: docker-boot:20211017135820-13-main
           name: docker-boot-e2e
           imagePullPolicy: Always
           ports:
